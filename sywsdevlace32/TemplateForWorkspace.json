@@ -567,8 +567,8 @@
 					"recurrence": {
 						"frequency": "Hour",
 						"interval": 24,
-						"startTime": "2021-10-01T07:00:00Z",
-						"timeZone": "UTC"
+						"startTime": "2021-10-01T07:00:00",
+						"timeZone": "Dateline Standard Time"
 					}
 				}
 			},
@@ -666,7 +666,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "049134a9-0258-4db0-a1dd-e10047aa138e"
+						"spark.autotune.trackingId": "d112abbf-28a8-422f-a74b-9974c2363f4f"
 					}
 				},
 				"metadata": {
@@ -691,10 +691,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 4,
-						"memory": 28,
-						"automaticScaleJobs": false
-					},
-					"sessionKeepAliveTimeout": 30
+						"memory": 28
+					}
 				},
 				"cells": [
 					{
