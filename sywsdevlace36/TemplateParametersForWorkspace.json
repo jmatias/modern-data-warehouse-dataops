@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "sywsdevlace36"
+		},
+		"sywsdevlace36-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"P_Ingest_MelbParkingData_properties_5_sqlPool_referenceName": {
+			"value": "syndpdevlace36"
+		},
+		"Ls_AdlsGen2_01_properties_typeProperties_url": {
+			"value": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "Ls_KeyVault_01",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "datalakeurl"
+			}
+		},
+		"Ls_KeyVault_01_properties_typeProperties_baseUrl": {
+			"value": "https://mdwdops-kv-dev-lace36.vault.azure.net/"
+		},
+		"Ls_Rest_MelParkSensors_01_properties_typeProperties_url": {
+			"value": "https://data.melbourne.vic.gov.au/resource/"
+		},
+		"Ls_Rest_MelParkSensors_01_properties_typeProperties_enableServerCertificateValidation": {
+			"value": true
+		},
+		"Ls_Rest_MelParkSensors_01_properties_typeProperties_authenticationType": {
+			"value": "Anonymous"
+		},
+		"sywsdevlace36-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
+			"value": ""
+		},
+		"sywsdevlace36-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://mdwdopsst2devlace36.dfs.core.windows.net"
+		},
+		"00_setup_properties_bigDataPool_referenceName": {
+			"value": "synspdevlace36"
+		},
+		"01a_explore_properties_bigDataPool_referenceName": {
+			"value": "synspdevlace36"
+		},
+		"01b_explore_sqlserverless_properties_bigDataPool_referenceName": {
+			"value": "synspdevlace36"
+		},
+		"02_standardize_properties_bigDataPool_referenceName": {
+			"value": "synspdevlace36"
+		},
+		"03_transform_properties_bigDataPool_referenceName": {
+			"value": "synspdevlace36"
+		}
+	}
+}
