@@ -184,7 +184,8 @@ import time
 from opencensus.ext.azure.log_exporter import AzureLogHandler
 
 logger = logging.getLogger(__name__)
-logger.addHandler(AzureLogHandler(connection_string=dbutils.secrets.get(scope = "storage_scope", key = "applicationInsightsKey")))
+insights_key = dbutils.secrets.get(scope="storage_scope", key="applicationInsightsKey")
+logger.addHandler(AzureLogHandler(connection_string=f"InstrumentationKey={insights_key}"))
 
 result_dic = checkpoint_result.to_json_dict()
 key_name=[key for key in result_dic['_run_results'].keys()][0]
