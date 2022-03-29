@@ -1,0 +1,9 @@
+{
+	"name": "mdwdops-adf-dev-la2",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "80016b68-6bae-4db7-b3ff-ae9287737f23",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

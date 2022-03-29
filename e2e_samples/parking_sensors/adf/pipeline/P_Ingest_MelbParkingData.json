@@ -47,7 +47,7 @@
 						},
 						{
 							"pypi": {
-								"package": "opencensus-ext-azure"
+								"package": "applicationinsights"
 							}
 						}
 					]
@@ -265,7 +265,7 @@
 			}
 		},
 		"annotations": [],
-		"lastPublishTime": "2022-03-23T08:33:27Z"
+		"lastPublishTime": "2022-03-29T05:52:02Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }
